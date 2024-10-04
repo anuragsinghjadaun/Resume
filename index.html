@@ -1,100 +1,177 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>John Doe - CV</title>
-    <link rel="stylesheet" href="styles.css">
-    <script src="https://unpkg.com/feather-icons"></script>
-</head>
-<body>
-    <div class="container">
-        <header>
-            <div class="profile-card">
-                <img src="/placeholder.svg?height=150&width=150" alt="John Doe" class="profile-image">
-                <h1>John Doe</h1>
-                <p>Web Developer & Designer</p>
-            </div>
-        </header>
-        
-        <nav>
-            <button class="nav-btn active" data-section="about">About</button>
-            <button class="nav-btn" data-section="experience">Experience</button>
-            <button class="nav-btn" data-section="skills">Skills</button>
-            <button class="nav-btn" data-section="contact">Contact</button>
-        </nav>
-        
-        <main>
-            <section id="about" class="active">
-                <h2>About Me</h2>
-                <p>I'm a passionate web developer with 5 years of experience in creating responsive and user-friendly websites. I love turning complex problems into simple, beautiful, and intuitive designs.</p>
-            </section>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Resume</title>
+    <style>
+    @media (min-width:600px){ 
+        /*laptop*/
+        .body{
+            margin:0;
+            padding:0px;
+            font-family:arial;
+        }
+        *{
+            margin:0;
+            padding:0px;
+            font-family:arial;
+        }
+        .resume_head{
+            text-align:center;
+            width:100%;
+            height:70px;
+            background-color:#007b6f;
+            color:white;
+            padding-top:10px;
+        }
+        .resume{
+            margin: 2% 5%;
+        }
+        .skills{
+            display:flex;
+            justify-content:space-between;
+        }
+        .underline{
+            width:100%;
+            border-bottom:2px solid #007b6f;
+            color:#007b6f;
+            margin-bottom:0.5%;
+        }
+        .container{
+            margin-top:2%;
+        }
+        .container1{
+            width:45%;
+            margin-top:2%;
+        }
+        li::marker {
+           color: #007b6f;
+        }
+        ul{
+            margin:10px 15px;
+        }
+    }
+    
+    
+    @media (max-width:600px){
+        /*mobile view*/
+        .body{
+            margin:0;
+            padding:0px;
             
-            <section id="experience">
-                <h2>Work Experience</h2>
-                <div class="timeline">
-                    <div class="timeline-item">
-                        <h3>Senior Web Developer</h3>
-                        <p>ABC Tech, 2020 - Present</p>
-                        <ul>
-                            <li>Lead a team of 5 developers</li>
-                            <li>Implemented responsive design techniques</li>
-                            <li>Improved website performance by 40%</li>
-                        </ul>
-                    </div>
-                    <div class="timeline-item">
-                        <h3>Web Developer</h3>
-                        <p>XYZ Solutions, 2018 - 2020</p>
-                        <ul>
-                            <li>Developed and maintained client websites</li>
-                            <li>Collaborated with design team to implement UI/UX improvements</li>
-                            <li>Integrated third-party APIs and services</li>
-                        </ul>
-                    </div>
-                </div>
-            </section>
-            
-            <section id="skills">
-                <h2>Skills</h2>
-                <div class="skills-container">
-                    <div class="skill">
-                        <i data-feather="html"></i>
-                        <span>HTML5</span>
-                    </div>
-                    <div class="skill">
-                        <i data-feather="css"></i>
-                        <span>CSS3</span>
-                    </div>
-                    <div class="skill">
-                        <i data-feather="javascript"></i>
-                        <span>JavaScript</span>
-                    </div>
-                    <div class="skill">
-                        <i data-feather="react"></i>
-                        <span>React</span>
-                    </div>
-                    <div class="skill">
-                        <i data-feather="git-branch"></i>
-                        <span>Git</span>
-                    </div>
-                    <div class="skill">
-                        <i data-feather="database"></i>
-                        <span>SQL</span>
-                    </div>
-                </div>
-            </section>
-            
-            <section id="contact">
-                <h2>Contact Me</h2>
-                <form id="contact-form">
-                    <input type="text" name="name" placeholder="Your Name" required>
-                    <input type="email" name="email" placeholder="Your Email" required>
-                    <textarea name="message" placeholder="Your Message" required></textarea>
-                    <button type="submit">Send Message</button>
-                </form>
-            </section>
-        </main>
-    </div>
-    <script src="script.js"></script>
-</body>
+            font-family:arial;
+        }
+        *{
+            margin:0;
+            padding:0px;
+            font-family:arial;
+        }
+        p{
+            font-size:14px;   
+            margin-top:10px;
+        }
+       li{
+         font-size:14px;   
+         margin-top:5px;
+        }
+        .resume_head{
+            text-align:center;
+            width:100%;
+            height:70px;
+            background-color:#007b6f;
+            color:white;
+            padding-top:10px;
+        }
+        .resume{
+            margin: 2% 5%;
+        }
+        .underline{
+            width:100%;
+            border-bottom:2px solid #007b6f;
+            color:#007b6f;
+            margin-bottom:0.5%;
+        }
+        .container{
+            margin-top:2%;
+        }
+        .container1{
+            width:100%;
+            margin-top:2%;
+        }
+        li::marker {
+           color: #007b6f;
+        }
+        ul{
+            margin:10px 15px;
+        }
+    }
+    </style>
+  </head>
+  <body>
+      <div class="resume_head">
+          <h1>Anurag Singh</h1>
+          <p>Front-end Developer & UI/UX Designer</p>
+      </div>
+      
+      <div class="resume">
+          <div class="container">
+          <div class="underline">
+              <h3>Objective</h3>
+          </div>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed laoreet nisi at elit venenatis fringilla. Cras ut semper quam, sit.</p>
+          </div>
+          
+          
+          <div class="skills">
+              
+          <div class="container1">
+          <div class="underline">
+              <h3>Technical Skills</h3>
+          </div>
+          <ul>
+              <li>HTML & CSS</li>
+              <li>JavaScript</li>
+              <li>Python (Programming Language)</li>
+              <li>SQL</li>
+              <li>Mongodb</li>
+              <li>PHP</li>
+              <li>React</li>
+              <li>Node</li>
+              <li>Express</li>
+              <li>TailWind & GSAP</li>
+              <li>Figma </li>
+              <li>Canva</li>
+          </ul>
+          </div>
+          
+          <div class="container1">
+          <div class="underline">
+              <h3>Soft Skills</h3>
+          </div>
+          <ul>
+              <li>Strong Communication Skills</li>
+              <li>Leadership</li>
+              <li>Enthusiastic</li>
+              <li>HardWorking</li>
+              <li>Patience</li>
+              <li>Integrity</li>
+              <li>Honesty</li>
+          </ul>
+          </div>
+          
+          </div>
+          
+          <div class="container">
+          <div class="underline">
+              <h3>Education</h3>
+          </div>
+          <p><b>Dharm Samaj College Affiliated To Raja Mahendra Pratap Singh University</b></p>
+          <p>Bachelor of Computer Application</p>
+          <p>[May, 2025]</p>
+          </div>
+          
+      </div>
+  </body>
 </html>
