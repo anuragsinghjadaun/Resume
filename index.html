@@ -179,13 +179,23 @@
           <div class="underline">
               <h3>Contact</h3>
           </div>
-          <p>Phone no: <b>(+91) 8630652014</b></p>
-          <p>Email: devanuragjadaun@gmail.com</p>
+          <p>Phone no: <b onclick="openPhone()">(+91) 8630652014</b></p>
+          <p>Email: <span onclick="openEmail()"> devanuragjadaun@gmail.com</span></p>
           <div style="display:flex;gap:10px;color:blue">
           <p>Linkedin</p>
           <p>Github</p>
           </div></div>
         
       </div>
+
+<script>
+    function openEmail() {
+        window.location.href = "mailto:xyz.@gmail.com";
+    }
+
+    function openPhone() {
+        window.location.href = "tel:+1234567890"; // Replace with your phone number
+    }
+</script>
   </body>
 </html>
